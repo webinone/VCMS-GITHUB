@@ -1,0 +1,57 @@
+{
+  "APP" : {
+    "port" : ":1323",
+    "contents_root" : "/usr/local/WowzaStreamingEngine-4.6.0/content",
+    "thumbnail_root" : "/home/foresight/go1.8/src/VCMS/statics/thumbnail",
+    "banner_root" : "/home/foresight/go1.8/src/VCMS/statics/banner",
+    "download_root" : "/home/foresight/go1.8/src/VCMS/statics/download",
+    "excel_root" : "/home/foresight/go1.8/src/VCMS/statics/excel"
+  },
+  "RDB" : [
+    {
+      "type" : "vcms",
+      "product":"mysql",
+      "connect_string" : "root:cjaeks^&*()@tcp(222.231.29.23:3306)/VCMS?charset=utf8&parseTime=True&loc=Local",
+      "max_idle_conns":10,
+      "max_open_conns":100,
+      "debug":true,
+      "migrate":true
+    },
+    {
+      "type" : "hellot",
+      "product":"mysql",
+      "connect_string" : "hellot007:hellot0102@tcp(118.128.155.103:3306)/hellot_test?charset=utf8&parseTime=True&loc=Local",
+      "max_idle_conns":10,
+      "max_open_conns":100,
+      "debug":true,
+      "migrate":true
+    }
+  ] ,
+  "REDIS" : {
+    "url" : "118.128.155.103:6379",
+    "password" : "cjaeks^&*()",
+    "db" : 0,
+    "expired_time" : 10
+  },
+  "WOWZA" : {
+    "api_url" : "http://222.231.29.47:8087",
+    "vcms_vod_name" : "vcms_vod",
+    "custom_api_url" : "http://222.231.29.47:8086",
+    "stream_url" : "222.231.29.47:1935"
+  },
+  "AUTH" : {
+    "sso_url" : "http://localhost:8080",
+    "auth_key" : "auth_secret_key",
+    "jwt_key" : "jwt_secret_key"
+  },
+  "EMAIL" : {
+    "smtp_url"  : "smtp.mailplug.co.kr",
+    "smtp_port" : 465,
+    "user"      : "help@hellot.net",
+    "password"  : "chomdan4151",
+    "template"  : "/home/foresight/go1.8/src/VCMS/email_template.html"
+  },
+  "HELLOT" : {
+    "api_url"   : "http://wwwtest.hellot.net"
+  }
+}

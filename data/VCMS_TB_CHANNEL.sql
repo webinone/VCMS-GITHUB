@@ -1,0 +1,2 @@
+INSERT INTO TB_CHANNEL (tenant_id, channel_id, name, bitrate, created_at, updated_at, updated_id, deleted_at) VALUES ('test', '725091a6-c07f-480f-b6e0-adba4acbc4f6', 'test4', '1100000', '2017-04-28 14:54:35', '2017-04-28 14:54:35', 'test', null);
+INSERT INTO TB_CHANNEL (tenant_id, channel_id, name, bitrate, created_at, updated_at, updated_id, deleted_at) VALUES ('test', '094f428a-2a0a-4eea-bfde-e895fd6afa7b', 'test5', '750000', '2017-04-28 14:54:44', '2017-04-28 14:54:44', 'test', null);
